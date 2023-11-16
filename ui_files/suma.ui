@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>359</width>
-    <height>364</height>
+    <width>546</width>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,212 +19,354 @@ border-radius:10px;
 border: 1px solid black;
 }</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <widget class="QLabel" name="label">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>16777215</height>
-      </size>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>25</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border:none;</string>
-     </property>
-     <property name="text">
-      <string>CALCULAR</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Suma</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>25</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:none;</string>
+         </property>
+         <property name="text">
+          <string>CALCULAR</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLineEdit" name="numero1_lineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>28</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius:10px;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="numero2_lineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>28</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Operaciones</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>SUMA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RESTA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MULTIPLICACION</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DIVISIÓN</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>21</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Resultado =</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="resultado_label">
+           <property name="font">
+            <font>
+             <pointsize>22</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="buton_suma">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Calcular</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources.qrc">
+             <normaloff>:/iconos/assets/iconos/plus2.png</normaloff>:/iconos/assets/iconos/plus2.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="boton_borrar">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>BORRAR</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources.qrc">
+             <normaloff>:/iconos/assets/iconos/trash.png</normaloff>:/iconos/assets/iconos/trash.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="boton_cerrar">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>CERRAR</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources.qrc">
+             <normaloff>:/iconos/assets/iconos/close.png</normaloff>:/iconos/assets/iconos/close.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Alumnos</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>SQL</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Buscar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="buscar_line"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="alumnos_tableWidget">
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>id</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>nombre</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>apellido</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>asistencia</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>jonathan</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>rivas</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>SI</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_actualizar">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Actualizar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Registro</string>
+      </attribute>
+     </widget>
     </widget>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <widget class="QLineEdit" name="numero1_lineEdit">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>28</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>150</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius:10px;</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="numero2_lineEdit">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>28</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>150</width>
-         <height>16777215</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_5">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <pointsize>13</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Operaciones</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QComboBox" name="comboBox">
-       <property name="font">
-        <font>
-         <pointsize>13</pointsize>
-        </font>
-       </property>
-       <item>
-        <property name="text">
-         <string>SUMA</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>RESTA</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>MULTIPLICACION</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>DIVISIÓN</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>21</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Resultado =</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="resultado_label">
-       <property name="font">
-        <font>
-         <pointsize>22</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="buton_suma">
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Calcular</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../resources.qrc">
-         <normaloff>:/iconos/assets/iconos/plus2.png</normaloff>:/iconos/assets/iconos/plus2.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>25</width>
-         <height>25</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="boton_borrar">
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>BORRAR</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../resources.qrc">
-         <normaloff>:/iconos/assets/iconos/trash.png</normaloff>:/iconos/assets/iconos/trash.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>25</width>
-         <height>25</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="boton_cerrar">
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>CERRAR</string>
-       </property>
-       <property name="icon">
-        <iconset resource="../resources.qrc">
-         <normaloff>:/iconos/assets/iconos/close.png</normaloff>:/iconos/assets/iconos/close.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>25</width>
-         <height>25</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-    </layout>
    </item>
   </layout>
  </widget>
